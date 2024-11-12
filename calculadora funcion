@@ -1,0 +1,26 @@
+function Calcular {
+    param (
+        [float]$valor1,
+        [float]$valor2,
+        [string]$operacio
+    )
+
+    switch ($operacio) {
+        '+' { return $valor1 + $valor2 }
+        '-' { return $valor1 - $valor2 }
+        '*' { return $valor1 * $valor2 }
+        '/' {
+            if ($valor2 -ne 0) {
+                return $valor1 / $valor2
+            } else {
+                Write-Output "Error: No es pot dividir per zero."
+                return $null
+            }
+        }
+        default {
+            Write-Output "Operació no vàlida. Utilitza +, -, * o /."
+            return $null
+        }
+    }
+}
+
