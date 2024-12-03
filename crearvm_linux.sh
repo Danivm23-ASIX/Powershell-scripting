@@ -2,7 +2,7 @@
 
 VMName="MaquinaLinux"
 
-# Crear la máquina virtual
+# Crear la maquina virtual
 VBoxManage createvm --name "$VMName" --register
 
 # Configurar memoria y procesador
@@ -13,4 +13,4 @@ for i in {1..8}; do
     VBoxManage modifyvm "$VMName" --nic$i nat
 done
 
-echo "Máquina virtual creada con 8 adaptadores de red. Configúrala como desees en VirtualBox."
+echo "Maquina virtual creada con 8 adaptadores de red. Configurala como desees en VirtualBox."
