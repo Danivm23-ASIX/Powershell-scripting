@@ -14,4 +14,4 @@ for ($i = 1; $i -le 8; $i++) {
     VBoxManage modifyvm $VMName --nic$i nat
 }
 
-Write-Host "Máquina virtual creada con 8 adaptadores de red. Configúrala como desees en VirtualBox."
+Write-Host "Maquina virtual creada con 8 adaptadores de red. Configurala como desees en VirtualBox."
